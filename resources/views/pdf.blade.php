@@ -23,19 +23,18 @@ $resultado=mysqli_query($mysqli,"SELECT * FROM projects ORDER BY id DESC");
     <p><strong>Listado de Proyectos:</strong></p>
     <table class="table-auto w-full">
                 <tr bgcolor='#DDDDDD'>
-                    <td><strong>Nombre Proyecto</strong></td>
-                    <td><strong>Fuente de Fondos</strong></td>
-                    <td><strong>Monto Planificado</strong></td>
-                    <td><strong>Monto Patrocinado</strong></td>
-                    <td><strong>Monto Fondos Propios</strong></td>
-                    
+                <td align=center><strong>Nombre Proyecto</strong></td>
+                <td align=center><strong>Fuente de Fondos</strong></td>
+                <td align=center><strong>Monto Planificado</strong></td>
+                <td align=center><strong>Monto Patrocinado</strong></td>
+                <td align=center><strong>Monto Fondos Propios</strong></td>
                 </tr>
                 <tr>
                     <?php
                     while($res=mysqli_fetch_assoc($resultado))
                     {
                         echo "<tr>";
-                        echo"<td align=center>".$res['nombreProyecto']."</td>";
+                        echo"<td>".$res['nombreProyecto']."</td>";
                         echo"<td align=center>".$res['fuenteFondos']."</td>";
                         echo"<td align=center>".$res['montoPlanificado']."</td>";
                         echo"<td align=center>".$res['montoPatrocinado']."</td>";
