@@ -6,8 +6,4 @@
     <x-nav-link :href="route('projects.index')" :active="request()->routeIs('projects.index')">
         {{ __('Proyectos')}}
     </x-nav-link>
-
-    <x-nav-link :href="route('projects.index')" :active="request()->routeIs('projects.index')">
-        {{ __('Reportes')}}
-    </x-nav-link>
 </div>
